@@ -319,7 +319,14 @@ export default function SessionClient({ sessionId }: { sessionId: string }) {
     if (deckFinished || remaining.length === 0) {
       return <Loader label="Nice! Waiting for your partner to finish swiping…" />;
     }
-    return <SwipeDeck titles={remaining} onSwipe={handleSwipe} onDeckComplete={handleDeckComplete} />;
+    return (
+      <SwipeDeck
+        titles={remaining}
+        totalCount={poolTitles.length}
+        onSwipe={handleSwipe}
+        onDeckComplete={handleDeckComplete}
+      />
+    );
   }
 
   if (session.status === "matched") {
