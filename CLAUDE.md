@@ -3,8 +3,12 @@
 This file is the persistent context for this project. It lives in the repo (not in any
 account-scoped Claude memory), so it survives switching Claude accounts, machines, or
 Claude Code sessions entirely — anyone opening this directory picks up full context here.
-**Keep this updated as the project evolves** — when you (Claude) make a non-trivial
-decision, fix a real bug, or change direction, add it here before ending the session.
+**Keep this updated continuously, not just at session end.** The user has explicitly asked
+for this file to be updated naturally as things happen — don't wait for a natural stopping
+point or an explicit request. The moment a non-trivial decision is made, a real bug is found
+and fixed, a feature is verified (or found broken), or direction changes, edit this file
+right then, in the same turn, before moving on. Commit it whenever other work in the repo
+gets committed — it doesn't need its own separate commit each time; bundle it in.
 
 ## What this is
 A two-device movie/TV matchmaker for couples who can't agree what to watch. Partner A sets
